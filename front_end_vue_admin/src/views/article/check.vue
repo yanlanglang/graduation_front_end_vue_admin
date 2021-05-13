@@ -79,10 +79,6 @@ export default {
     handleDelete(index, articleId) {
       console.log(index, articleId);
       this.open(articleId);
-
-      //刷新页面(强制刷新)
-      this.$router.go(0);
-
     },
 
     //是否确认删除
@@ -100,6 +96,9 @@ export default {
                 type: "success",
                 message: "删除成功",
               });
+
+              //刷新页面(强制刷新)
+              this.$router.go(0);
             },
             (err) => {}
           );

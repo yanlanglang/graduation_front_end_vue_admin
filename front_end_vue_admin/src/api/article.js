@@ -34,7 +34,6 @@ export function delArticle(id) {
 }
 
 export function postPublishArticle(data) {
-
     return request ({
         url: 'publishArticle',
         method: 'post',
