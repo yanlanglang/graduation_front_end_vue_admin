@@ -167,13 +167,11 @@ export default {
           postPublishArticle(this.formModel).then(
             (res) => {
               console.log(res);
+              this.$message.success("文章发布成功!");
+              this.$router.go(0);
             },
             (err) => {}
           );
-        }
-        {
-          //验证失败
-          this.$message.error("数据填写不完善");
         }
       });
     },

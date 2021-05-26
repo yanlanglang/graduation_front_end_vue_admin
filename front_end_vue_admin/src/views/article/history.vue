@@ -112,7 +112,7 @@ export default {
 
     /*换页的三个方法 提取出来的公共部分，此处的page代表需要跳转的页码*/
     changePageNumber(page) {
-      getAllCustomerArticles(page).then(
+      getAllAdminArticles(page).then(
         (res) => {
           this.page = res.data;
         },
